@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="_13_JSTLTags">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <property name="context-root" value="_13_JSTLTags"/>
+        <property name="java-output-path" value="/_13_JSTLTags/build/classes"/>
+    </wb-module>
+</project-modules>
