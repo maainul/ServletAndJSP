@@ -7,20 +7,15 @@
 <title>Insert title here</title>
 </head>
 <body>
-
 	<%
-		//response.setHeader("Cache-Control","no-cache","no-store","must-revalidate");
-
-		response.setHeader("Pragma", "no-cache");
-		response.setHeader("Expires", "0");
-
 		if (session.getAttribute("username") == null) {
 			response.sendRedirect("login.jsp");
 		}
 	%>
 
-
-	<h1>Video page ...enjoy</h1>
+	<h1>Welcome to video page page.</h1>
+	${username}
+	<h1>Enjoy video</h1>
 
 </body>
 </html>
