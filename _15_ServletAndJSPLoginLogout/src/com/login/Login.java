@@ -13,6 +13,11 @@ import com.login.dao.LoginDao;
 @WebServlet("/Login")
 public class Login extends HttpServlet {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 
@@ -23,8 +28,8 @@ public class Login extends HttpServlet {
 		LoginDao dao = new LoginDao();
 		
 		
-		//if(dao.check(uname, pass)) {
-		if (uname.equals("user") && pass.equals("1")) {
+		if(dao.check(uname, pass)) {
+		//if (uname.equals("user") && pass.equals("1")) {
 			
 			HttpSession session = request.getSession();
 			session.setAttribute("username", uname);
